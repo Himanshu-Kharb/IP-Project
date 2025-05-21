@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GestureSense | Hands to Words</title>
+    <link rel="stylesheet" href="/static/hands-to-words.css">
+    <script defer src="/static/hands-to-words.js"></script>
+</head>
+<body>
+
+    <!-- ✅ Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="abcc">
+                <a href="index.html" class="abcc-link">Home</a>
+                <a href="about.html" class="abcc-link">About</a>
+                <a href="login.html" class="abcc-link">Login</a>
+                <a href="hands-to-words.html" class="abcc-link">Hands to Words</a>
+                <a href="contact.html" class="abcc-link">Contact</a>
+                <a href="symptom-checker.html" class="abcc-link">Symptom Checker</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ✅ Hand Gesture to Words Section -->
+    <section class="gesture-section">
+        <div class="gesture-container">
+            <h2>Hands to Words</h2>
+            <p>Use your hand gestures to input text into the system. The AI will recognize your gestures and convert them to meaningful words.</p>
+            <div id="gesture-container">
+                <!-- Video feed will appear here -->
+                <img src="{{ url_for('video_feed') }}" width="640" height="480" >
+                <!-- <div id="gesture-output">
+                    <h3>Recognized Gesture:</h3>
+                    <p id="gesture-text">No gesture detected yet...</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ Footer -->
+    <footer>
+        <p>&copy; 2025 GestureSense. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/handstelemetry"></script> <!-- Mediapipe JS -->
+    <script src="script.js"></script>
+</body>
+</html>

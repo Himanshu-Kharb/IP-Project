@@ -1,0 +1,63 @@
+.about-section {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+.about-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #1abc9c;
+}
+
+.about-container h3 {
+    font-size: 22px;
+    margin-top: 30px;
+    color: #333;
+}
+
+.about-container p, .about-container ul {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.about-container ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+/* ==== NEW STATUS BAR - "abcc" CLASS ==== */
+.abcc {
+    display: flex;
+    justify-content: center;
+    background-color: #2c3e50;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.abcc-link {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 25px;
+    transition: color 0.3s ease;
+}
+
+.abcc-link:hover {
+    color: #1abc9c;
+}
+
+.abcc-link.active {
+    color: #16a085;
+    font-weight: bold;
+}

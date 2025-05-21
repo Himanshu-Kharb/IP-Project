@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Symptom Checker | Sign2Read</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container">
+      <h1 class="logo">Sign2Read</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#demo">Demo</a></li>
+          <li><a href="symptom-checker.html">Symptom Checker</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Symptom Checker Section -->
+  <section class="contact">
+    <div class="container">
+      <h2>Symptom Checker</h2>
+      <form id="symptom-form">
+        <textarea id="symptoms" placeholder="Enter your symptoms separated by commas (e.g. fever, cough, headache)" rows="4" required></textarea>
+        <button type="submit">Check Disease</button>
+      </form>
+      <div id="disease-result" style="margin-top: 20px; font-weight: bold;"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sign2Read. All rights reserved.</p>
+  </footer>
+
+  <script src="symptom-checker.js"></script>
+</body>
+</html>

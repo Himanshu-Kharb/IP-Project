@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign2Read | Real-Time Sign Language Translator</title>
+  <link rel="stylesheet" href="static/style.css" />
+  <script defer src="static/index.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="abcc">
+        <a href="index.html" class="abcc-link">Home</a>
+        <a href="about.html" class="abcc-link">About</a>
+        <a href="login.html" class="abcc-link">Login</a>
+        <a href="hands-to-words.html" class="abcc-link">Hands to Words</a>
+        <a href="contact.html" class="abcc-link">Contact</a>
+        <a href="symptom-checker.html" class="abcc-link">Symptom Checker</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Convert Sign Language to Text in Real Time</h2>
+      <p>Empowering communication through gesture recognition and real-time language conversion.</p>
+      <a href="#demo" class="btn">Try the Demo</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Why Sign2Read?</h2>
+      <div class="feature-cards">
+        <div class="card">
+          <h3>Real-Time Translation</h3>
+          <p>Instantly convert sign language into readable text with high accuracy.</p>
+        </div>
+        <div class="card">
+          <h3>AI-Powered</h3>
+          <p>Uses AI and Computer Vision to detect hand gestures and translate them.</p>
+        </div>
+        <div class="card">
+          <h3>Inclusive Design</h3>
+          <p>Built for accessibility, promoting inclusivity for the deaf and hard-of-hearing community.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Section -->
+  <section id="demo" class="demo">
+    <div class="container">
+      <h2>Live Demo</h2>
+      <p>Click the button below to simulate a sign detection.</p>
+      <button id="translate-btn">Translate Sign</button>
+      <div id="output">
+        <h3>Detected Text:</h3>
+        <p id="translated-text">Waiting for input...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sign2Read. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

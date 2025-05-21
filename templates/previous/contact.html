@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Hand to Words</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="main.html">Hand to Words</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="in.html">symptoms</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Include Navbar -->
+    <div id="navbar-placeholder"></div> <!-- This will load the navbar dynamically -->
+
+    <main>
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, feel free to reach out to us using the form below:</p>
+            
+            <!-- Contact Form -->
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <!-- Message Confirmation -->
+            <div id="confirmation-message" class="confirmation-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Hand to Words Project. All Rights Reserved.</p>
+        <a href="/about.html">About Us</a> | <a href="/home.html">Home</a> | <a href="/contact.html">Contact</a>
+    </footer>
+
+    <!-- Include the navbar script -->
+    <script src="navbar.js"></script>
+    <script src="contact.js"></script> <!-- This script handles form submission and other JS logic -->
+</body>
+</html>

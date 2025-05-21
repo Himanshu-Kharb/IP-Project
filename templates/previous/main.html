@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture Recognition</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands"></script>
+    <style>
+        /* Add your styles for the Hand Gesture Recognition UI here */
+    </style>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Hand to Words</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="main.html">Hand to Words</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="in.html">symptoms</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1>Hand Gesture to Words</h1>
+
+    <!-- Updated to use Flask's video stream -->
+    <img id="video" src="{{ url_for('video_feed') }}" width="800" />
+
+    <div id="gesture-output">Detected Gesture: None</div>
+
+    <!-- You may need to move gesture recognition server-side or adapt it for image frames -->
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GestureSense | Symptom Checker</title>
+    <link rel="stylesheet" href="/static/symptom-checker.css">
+    <script defer src="/static/symptom-checker.js"></script>
+</head>
+<body>
+
+    <!-- ✅ Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="abcc">
+                <a href="index.html" class="abcc-link">Home</a>
+                <a href="about.html" class="abcc-link">About</a>
+                <a href="login.html" class="abcc-link">Login</a>
+                <a href="hands-to-words.html" class="abcc-link">Hands to Words</a>
+                <a href="contact.html" class="abcc-link">Contact</a>
+                <a href="symptom-checker.html" class="abcc-link">Symptom Checker</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ✅ Symptom Checker Section -->
+    <section class="symptom-section">
+        <div class="symptom-container">
+            <h2>Symptom Checker</h2>
+            <p>Enter your symptoms, and we will help identify possible diseases.</p>
+            <form id="symptom-form">
+                <input type="text" id="symptom1" placeholder="Symptom 1" required>
+                <input type="text" id="symptom2" placeholder="Symptom 2">
+                <input type="text" id="symptom3" placeholder="Symptom 3">
+                <button type="submit">Check Disease</button>
+            </form>
+            <div id="result">
+                <h3>Possible Disease:</h3>
+                <p id="disease-text">Enter symptoms to get a result.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ Footer -->
+    <footer>
+        <p>&copy; 2025 GestureSense. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

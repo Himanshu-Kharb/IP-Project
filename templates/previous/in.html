@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            text-align: center;
+            margin: 50px;
+            padding: 0;
+        }
+        header {
+    background-color: #007BFF; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+header .logo h1 {
+    margin: 0;
+}
+
+        header .logo h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .symptoms-checker {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .symptoms-checker h2 {
+            font-size: 30px;
+            color: #333;
+        }
+        .symptoms-checker input {
+            padding: 10px;
+            width: 80%;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .symptoms-checker button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .symptoms-checker button:hover {
+            background-color: #0056b3;
+        }
+        #result {
+            font-size: 1.2em;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgb(0, 123, 255);
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <h1>Hand to Words</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="homepage.html">home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="main.html">Hand to Words</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="in.html">symptoms</a></li>
+        </ul>
+    </nav>
+</header>
+    
+    <main>
+        <section class="symptoms-checker">
+            <h2>Check Your Symptoms</h2>
+            <p>Enter your symptoms below to get possible disease matches:</p>
+            <input type="text" id="symptom" placeholder="Enter your symptom">
+            <button onclick="checkDisease()">Check</button>
+            <div id="result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Symptom Checker. All Rights Reserved.</p>
+        <a href="#">Contact</a> | <a href="#">About Us</a>
+    </footer>
+
+    <script>
+        function checkDisease() {
+            let symptom = document.getElementById('symptom').value.toLowerCase();
+            let diseases = {
+
+    "fever": "Viral Flu, Malaria, COVID-19, Typhoid",
+    "cough": "Common Cold, Bronchitis, COVID-19, Tuberculosis",
+    "headache": "Migraine, Tension Headache, Stress, Meningitis",
+    "fatigue": "Anemia, Thyroid Problems, Diabetes, Depression",
+    "rash": "Allergy, Chickenpox, Measles, Eczema",
+    "shortness of breath": "Asthma, Pneumonia, COVID-19, Heart Disease",
+    "sore throat": "Strep Throat, Common Cold, Tonsillitis",
+    "nausea": "Food Poisoning, Gastroenteritis, Pregnancy",
+    "vomiting": "Food Poisoning, Gastroenteritis, Pregnancy",
+    "joint pain": "Arthritis, Lupus, Lyme Disease",
+    "chest pain": "Heart Attack, Angina, GERD",
+    "diarrhea": "Food Poisoning, IBS, Cholera",
+    "abdominal pain": "Appendicitis, Gastritis, Ulcers",
+    "chills": "Malaria, Flu, Pneumonia",
+    "dizziness": "Low Blood Pressure, Vertigo, Dehydration",
+    "sweating excessively": "Hyperthyroidism, Hypoglycemia, Anxiety",
+    "runny nose": "Allergies, Common Cold, Sinus Infection",
+    "weight loss": "Diabetes, Hyperthyroidism, Cancer",
+    "high blood pressure": "Hypertension, Kidney Disease, Heart Disease",
+    "weakness": "Anemia, Chronic Fatigue Syndrome, Stroke",
+    "difficulty swallowing": "GERD, Esophageal Cancer, Stroke",
+    "fever, cough, chestpain":"Flu, Malaria, Common Cold, Angina,Covid-19 "
+            };
+            
+            let result = diseases[symptom] || "No matching disease found. Consult a doctor.";
+            document.getElementById('result').innerText = result;
+        }
+    </script>
+</body>
+</html>

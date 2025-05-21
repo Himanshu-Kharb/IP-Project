@@ -1,0 +1,125 @@
+/* Contact Form Page Styles */
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+}
+
+.contact-form p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.confirmation-message {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: green;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Navbar Styles */
+header {
+    background-color: #007BFF; /* Navbar background color */
+    color: white; /* Text color */
+    padding: 20px;
+    text-align: center;
+    position: fixed; /* Fix navbar at the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures navbar stays on top of other content */
+}
+
+/* Logo Styling */
+header .logo h1 {
+    margin: 0;
+}
+
+/* Navbar Links Styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 10px; /* Adds space between the logo and navbar links */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3; /* Hover effect */
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Adjust layout when navbar is sticky/fixed */
+main {
+    margin-top: 80px; /* Prevents content from being hidden behind the fixed navbar */
+}
